@@ -26,7 +26,7 @@ enum tap_dance_codes {
   DANCE_1,
 };
 
-#define DUAL_FUNC_0 LT(5, KC_8)
+#define DUAL_FUNC_0 LT(8, KC_Q)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
@@ -34,10 +34,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LCTL(KC_B),     DUAL_FUNC_0,    KC_W,           KC_E,           KC_R,           KC_T,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLS,
     KC_ESCAPE,      MT(MOD_LSFT, KC_A),KC_S,           MT(MOD_LALT, KC_D),KC_F,           MT(MOD_LGUI, KC_G),                                                                MT(MOD_LGUI, KC_H),KC_J,           MT(MOD_LALT, KC_K),KC_L,           MT(MOD_LSFT, KC_SCLN),LT(5, KC_QUOTE),
     KC_LEFT_SHIFT,  LT(1, KC_Z),    MT(MOD_LCTL, KC_X),KC_C,           KC_V,           TD(DANCE_0),    KC_LEFT_GUI,                                    KC_LEFT_GUI,    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         LT(1, KC_SLASH),KC_RIGHT_SHIFT,
-    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_SPACE,                                                                                                       KC_ENTER,       KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,
+    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                                                                                 KC_TRANSPARENT, KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,
                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
                                                                                                                     KC_TRANSPARENT, KC_TRANSPARENT,
-                                                                                    TD(DANCE_1),    LT(2, KC_DELETE),KC_TRANSPARENT, KC_TRANSPARENT, KC_BSPC,        MT(MOD_RALT, KC_TAB)
+                                                                                    KC_SPACE,       TD(DANCE_1),    LT(2, KC_DELETE),KC_BSPC,        MT(MOD_RALT, KC_TAB),KC_ENTER
   ),
   [1] = LAYOUT_ergodox_pretty(
     KC_ESCAPE,      KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT,
